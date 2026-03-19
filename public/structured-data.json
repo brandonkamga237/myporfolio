@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brandon Kamga",
+  "alternateName": "Brandon Duclerc Tamwa Kamga",
+  "jobTitle": "Fullstack AI Engineer",
+  "description": "Fullstack AI Engineer based in Yaoundé, building production systems at the intersection of web architecture, AI, and DevOps.",
+  "url": "https://brandonkamga.com",
+  "image": "https://brandonkamga.com/og-image.png",
+  "email": "brandonkamga237@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Yaoundé",
+    "addressCountry": "CM"
+  },
+  "sameAs": [
+    "https://github.com/brandonkamga237",
+    "https://www.linkedin.com/in/brandon-duclerc-tamwa-kamga/",
+    "https://x.com/TamwaKamga51178",
+    "https://youtube.com/@brandonkamga"
+  ],
+  "knowsAbout": [
+    "React", "TypeScript", "Next.js", "Tailwind CSS",
+    "Node.js", "FastAPI", "Spring Boot",
+    "LangChain", "Gemini AI", "TensorFlow",
+    "Docker", "Grafana", "Prometheus", "PostgreSQL",
+    "DevOps", "CI/CD", "GitHub Actions"
+  ]
+}

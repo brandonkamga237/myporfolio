@@ -1,0 +1,22 @@
+services:
+  portfolio:
+    image: brandonkamga237/myporfolio:latest
+    container_name: portfolio-brandon
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.brandon-portfolio.rule=Host(`www.brandonkamga.com`) || Host(`brandonkamga.com`)"
+      - "traefik.http.routers.brandon-portfolio.entrypoints=websecure"
+      - "traefik.http.routers.brandon-portfolio.tls.certresolver=le"
+      - "traefik.http.services.brandon-portfolio.loadbalancer.server.port=80"
+      # Redirect brandonkamga.com → www.brandonkamga.com
+      - "traefik.http.middlewares.brandon-www-redirect.redirectregex.regex=^https://brandonkamga\\.com/(.*)"
+      - "traefik.http.middlewares.brandon-www-redirect.redirectregex.replacement=https://www.brandonkamga.com/$${1}"
+      - "traefik.http.middlewares.brandon-www-redirect.redirectregex.permanent=true"
+      - "traefik.http.routers.brandon-portfolio.middlewares=brandon-www-redirect"
+    networks:
+      - traefik-public
+
+networks:
+  traefik-public:
+    external: true
