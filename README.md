@@ -1,6 +1,6 @@
 # MyPortfolio-2
 
-[![GitHub stars](https://img.shields.io/github/stars/brandonkamga-dev/myporfolio-2?style=flat&logo=github)](https://github.com/brandonkamga-dev/myporfolio-2/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/brandonkamga237/myporfolio-2?style=flat&logo=github)](https://github.com/brandonkamga237/myporfolio-2/stargazers)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.3.1-blue.svg)](https://reactjs.org/)
@@ -12,7 +12,7 @@ A modern and responsive portfolio website built with React, TypeScript and Vite.
 
 ## Online Demo
 
-[View the Online Portfolio](https://brandonkamga237.griote.org/)
+[View the Online Portfolio](https://WWW.brandonkamga/)
 
 ## Features
 
@@ -58,7 +58,7 @@ A modern and responsive portfolio website built with React, TypeScript and Vite.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/brandonkamga-dev/myporfolio-2.git
+   git clone https://github.com/brandonkamga237/myporfolio-2.git
    cd myporfolio-2
    ```
 
@@ -112,7 +112,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Brandon Kamga**
 - Website: [brandonkamga237.griote.org](https://brandonkamga237.griote.org/)
-- GitHub: [@brandonkamga-dev](https://github.com/brandonkamga-dev)
+- GitHub: [@brandonkamga237](https://github.com/brandonkamga237)
 - LinkedIn: [Brandon Kamga](https://www.linkedin.com/in/brandon-duclerc-tamwa-kamga/)
 
 ## Acknowledgments
