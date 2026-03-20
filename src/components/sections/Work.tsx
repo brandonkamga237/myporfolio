@@ -33,16 +33,16 @@ export function Work() {
         {featuredProjects.map((project, i) => (
           <motion.div key={project.index} variants={itemVariants}>
             <div
-              className={`group relative py-8 border-t border-[#1E1E1E] flex gap-5 md:gap-8 transition-colors duration-200 hover:bg-white/[0.015] ${
+              className={`group relative py-8 border-t border-[#1E1E1E] flex gap-5 md:gap-8 transition-all duration-200 hover:bg-[#111111] border-l border-transparent hover:border-l-[#E8FF47]/25 hover:pl-3 ${
                 i === featuredProjects.length - 1 ? "border-b" : ""
               }`}
             >
               {/* Thumbnail — desktop only */}
-              <div className="hidden md:block shrink-0 w-[108px] h-[66px] overflow-hidden mt-0.5 rounded-sm">
+              <div className="hidden md:block shrink-0 w-[160px] h-[100px] overflow-hidden mt-0.5 rounded-sm">
                 <img
                   src={project.thumbnail}
                   alt={project.title}
-                  className="w-full h-full object-cover grayscale brightness-[0.45] group-hover:grayscale-0 group-hover:brightness-75 transition-all duration-500"
+                  className="w-full h-full object-cover grayscale brightness-[0.65] group-hover:grayscale-[0.25] group-hover:brightness-80 transition-all duration-500"
                 />
               </div>
 

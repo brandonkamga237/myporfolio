@@ -6,7 +6,7 @@ import egolyaImg from "../../assets/egolya.png";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative py-32 overflow-hidden">
+    <section id="contact" className="relative py-32 overflow-hidden" style={{ background: "linear-gradient(180deg, #0A0A0A 0%, #0C0C0C 50%, #0A0A0A 100%)" }}>
       {/*
         Background mockup — Egolya screenshot
         Positioned bottom-right, fading into the section edge.
@@ -24,6 +24,17 @@ export function Contact() {
           right: "-4%",
         }}
       />
+
+      {/* Warm brand glow — bottom-left, gives the page an energetic ending */}
+      <div className="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
+        <div
+          className="absolute bottom-0 left-0 w-[500px] h-[500px]"
+          style={{
+            background:
+              "radial-gradient(ellipse, rgba(232,255,71,0.03) 0%, transparent 65%)",
+          }}
+        />
+      </div>
 
       <div className="relative z-10">
         <SectionLabel>Contact</SectionLabel>
@@ -60,11 +71,11 @@ export function Contact() {
           <div className="flex flex-col gap-4 mb-12">
             <a
               href="mailto:brandonkamga237@gmail.com"
-              className="group inline-flex items-center gap-2 text-sm text-[#A8A8A8] hover:text-[#E8FF47] transition-colors duration-200 py-1"
+              className="group inline-flex items-center gap-2 text-base text-[#F0F0F0] hover:text-[#E8FF47] transition-colors duration-200 py-1"
             >
               <span>brandonkamga237@gmail.com</span>
               <ArrowUpRight
-                size={14}
+                size={16}
                 className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200"
               />
             </a>

@@ -6,7 +6,7 @@ import meImg from "../../assets/me.jpeg";
 
 export function About() {
   return (
-    <section id="about" className="relative py-32 overflow-hidden">
+    <section id="about" className="relative py-32 overflow-hidden" style={{ background: "linear-gradient(180deg, #0A0A0A 0%, #0D0D0D 30%, #0D0D0D 70%, #0A0A0A 100%)" }}>
       {/*
         Background mockup — profile photo
         At blur(120px) + grayscale, the image dissolves into a soft luminous
@@ -41,6 +41,25 @@ export function About() {
             I design and build intelligent software systems that combine modern web architecture,
             distributed infrastructure, and generative AI — from API design to production deployment.
           </p>
+
+          {/* Stats row — breaks the text wall, adds substance */}
+          <div className="flex flex-wrap gap-x-8 gap-y-4 py-6 border-y border-[#1A1A1A]">
+            {[
+              { value: "Tech Lead", label: "@ Griote Project-Africa" },
+              { value: "Founder", label: "of LesCracks" },
+              { value: "20+", label: "engineers mentored" },
+              { value: "9", label: "projects shipped" },
+            ].map((stat) => (
+              <div key={stat.label} className="flex flex-col gap-0.5">
+                <span className="text-[#F0F0F0] text-sm font-medium tracking-[-0.01em]">
+                  {stat.value}
+                </span>
+                <span className="font-mono text-[10px] text-[#6B6B6B] tracking-wide">
+                  {stat.label}
+                </span>
+              </div>
+            ))}
+          </div>
 
           <p>
             My work spans AI-powered tools, browser extensions, microservice architectures,

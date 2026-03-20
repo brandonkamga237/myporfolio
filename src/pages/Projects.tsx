@@ -52,7 +52,7 @@ const ProjectsPage = () => (
                 <img
                   src={project.thumbnail}
                   alt={project.title}
-                  className="w-full h-full object-cover grayscale brightness-[0.45] group-hover:grayscale-0 group-hover:brightness-75 transition-all duration-500"
+                  className="w-full h-full object-cover grayscale brightness-[0.65] group-hover:grayscale-[0.25] group-hover:brightness-80 transition-all duration-500"
                 />
               </div>
 
